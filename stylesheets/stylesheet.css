@@ -227,6 +227,11 @@ hr {
   background: url("../images/twitter-btn.png") 0 0 no-repeat;
 }
 
+.btn-twitch .icon{
+  opacity: 0.5;
+  background: url("../images/twitch-btn.png") 0 0 no-repeat;
+}
+
 .btn-patreon .icon{
   opacity: 0.8;
   background: url("../images/patreon-btn.png") 0 0 no-repeat;
