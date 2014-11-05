@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Multi Stream by Sava</title>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="multistream.js"></script>
+<style type="text/css">
+body {
+margin: 0px;
+width: 100%;
+height: 100%;
+}
+.twitch {
+height: 100%;
+width: 15%;
+float: right;
+}
+.hitbox {
+width: auto;
+width: 85%
+}
+#container {
+width: 100%;
+height: 100%;
+background-color: #333333;
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+<iframe class="hitbox" id='hitboxVideo' width="640" height="360" src="http://hitbox.tv/#!/embed/maxfirestorm?autoplay=true" frameborder="0" allowfullscreen></iframe>
+<iframe class="twitch" width="320" height="240" frameborder="0" scrolling="no" src="http://twitch.tv/chat/embed?channel=maxfirestorm&amp;popout_chat=true"></iframe>
+</div>
+</body>
+</html>
