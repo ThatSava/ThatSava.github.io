@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Steam join!</title>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="xdomain.js"></script>
+</head>
+<body>
+<a class="linky" >Click here to join! If the link isn't working the user isn't on any joinable servers!</a>
+<script>
+window.onload = getLink;
+function getLink() {
+$.ajax({
+url: 'https://steamcommunity.com/id/maxfirestorm',
+type: 'GET',
+success: function(res) {
+$('a.linky').attr("href", $(res.responseText).find("a.btn_green_white_innerfade.btn_small_thin").attr("href"))
+}});
+}
+</script>
+</body>
+</html>
