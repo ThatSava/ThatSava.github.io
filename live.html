@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Livestream!</title>
+
+	  <!-- Chang URLs to wherever Video.js files will be hosted -->
+	  <link href="stylesheets/video-js.css" rel="stylesheet" type="text/css">
+	  <!-- video.js must be in the <head> for older IEs to work. -->
+	  <script src="javascripts/video.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	  <script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
+	  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullPage.css" />
+
+	  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+	  <script>
+	    videojs.options.flash.swf = "video-js.swf";
+	  </script>
+	  <style>
+		html, body {
+			background-color: #000000; 
+		}
+		
+		.inliner {
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.vjs-progress-control {
+			display: none;
+		}
+
+		h1{
+			font-size: 5em;
+			font-family: arial,helvetica;
+			color: #fff;
+			margin:0;
+			padding:0;
+		}
+		
+		/*solves problem with overflowing video in Mac with Chrome */
+		#section0{
+			overflow: hidden;
+		}
+		
+		#section0 .layer{
+			position: absolute;
+			z-index: 4;
+			width: 100%;
+			left: 0;
+			top: 43%;
+		}
+
+		/* This keeps all the crap in place */
+		#wrapper {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			top:0;
+			right:0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* The video player */
+		#stream { 
+			width: 1580px;
+			height: 100% !important;
+		}
+
+	  </style>
+	</head>
+	<script>
+		function resize() {
+			var vpWidth = $(window).width();
+			$("#stream").width(vpWidth);
+			
+			$("#fullpage").reBuild(); 
+		}
+		
+		$(document).ready(function() {
+			$("#fullpage").fullpage({
+				sectionsColor: ['#000000', '#4BBFC3'],
+				scrollOverflow: true
+			});
+		});
+		
+		function load() {
+			resize();
+		}
+		$("#stream").width($(window).width());
+	</script>
+	<body onresize="resize()" onload="load()">
+		<div id="fullpage">
+			<div class="section " id="section0">
+				<div id="wrapper">
+					<video id="stream" class="video-js vjs-default-skin inliner" controls autoplay preload="none" data-setup="{}">
+						<source src="rtmp://server.savikin.me/live/sava" type='rtmp/mp4' />
+						<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+					</video>
+				</div>
+			</div>
+			<div class="section " id="section1">
+				<div class="intro">
+					<h1>Scroll back up if you want to watch!</h1>
+					<h1>This part is still work-in-progress</h1>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
