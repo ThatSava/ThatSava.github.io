@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <head>
+        <title>Sava</title>
+        <link rel="stylesheet prefetch" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet prefetch" href="css/animations.css" type="text/css"/>
+        <link rel="stylesheet prefetch" href="css/universal.css" type="text/css"/>
+        <link rel="stylesheet prefetch" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet prefetch" href="css/social.css" type="text/css"/>
+        <link rel="stylesheet prefetch" href="css/overlay.css" type="text/css"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="asset/favicon-96x96.png">
+        <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet prefetch' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script rel="prefetch" type="text/javascript" src="js/main.js"></script>
+        <script rel="prefetch" type="text/javascript" src="js/fullpage_anim.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6035885614011500",
+    enable_page_level_ads: true
+  });
+</script>
+    </head>
+    <body>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <div id="container">
 
-    <title>Official andrejsavikin site</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>dev/null</h1>
-        <h2></h2>
-
-        <section id="downloads">
-          <a href="https://github.com/andrejsavikin" class="btn btn-github" target="_blank"><span class="icon"></span>Stalk me on GitHub</a>
-		  <a href="https://twitter.com/andrejsavikin" class="btn btn-twitter" target="_blank"><span class="icon"></span>Stalk me on Twitter</a>
-		  <!-- <a href="http://www.patreon.com/user?u=246303" class="btn btn-patreon" target="_blank"><span class="icon"></span>Throw money at me</a> -->
-		  <a href="http://www.twitch.tv/andrejsavikin" class="btn btn-twitch" target="_blank"><span class="icon"></span>Watch me, LIVE!</a>
-          <a href="mailto:sava@savikin.me?Subject=Hello" class="btn btn-email" target="_top"><span class="icon"></span>Send me emails</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>List of content</h3>
-
-<p>There isn't much to see yet, but do not fear young one! </p>
-
-<!--<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
--->
-      </section>
+    <div id="intro" class="box-center centeredcontent">
+        <div class="menu divrightalign">
+            <!--<span onclick="openAboutUp()"><a href="#about" class="menuitem">About me</a></span>
+            <span onclick="openProjectUpDouble()"><a href="#projects" class="menuitem">Projects</a></span>-->
+        </div>
+        <div class="center">
+        <img src="asset/logo.png" id="profile"/>
+        <p id="name">Andrej "Sava" Savikin</p>
+        <div id="social">
+            <div>
+                <a href="https://github.com/ThatSava"><i class="fa fa-github fa-4x white social" aria-hidden="true"></i></a>
+                <a href="https://bitbucket.org/ThatSava/"><i class="fa fa-bitbucket fa-4x white social" aria-hidden="true"></i></a>
+                <!--<a href="https://www.patreon.com/Sava"><i class="fa fa-money fa-4x white social" aria-hidden="true"></i></a>-->
+            </div>
+            <div id="secret-not">
+                <a href="https://discord.gg/xtyMM4e" class="svg"><object data="asset/discord.svg" id="discord" type="image/svg+xml"></object></a>
+                <a href="https://steamcommunity.com/id/savikin"><i class="fa fa-steam fa-4x white social" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        </div>
     </div>
 
-    
-  </body>
+    <div id="aboutme">
+        <div class="menu divrightalign">
+            <span onclick="openHomeDown()"><a href="#home" class="menuitem">Home</a></span>
+            <span onclick="openProjectUp()"><a href="#projects" class="menuitem">Projects</a></span>
+        </div>
+        <div class="text-box">
+            <ul>
+                <li><p>I am a freelance sever administrator and developer.<br/> </p></li>
+                <li><p>I usually go around online under the name Sava or ThatSava.<br/> </p></li>
+                <li><p>I am bad at writing and don't know what to put in about me section of my website.<br/> </p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="myprojects">
+        <div class="menu divrightalign">
+            <span onclick="openHomeDownDouble()"><a href="#home" class="menuitem">Home</a></span>
+            <span onclick="openAboutDown()"><a href="#about" class="menuitem">About Me</a></span>
+        </div>
+        <div class="text-box">
+            <div id="discordlink" class="project">
+                <a href="https://github.com/andrejsavikin/DiscordLink">
+                    <h1 class="text">Discordlink</h1>
+                    <img src="asset/discord-blue.svg" id="discordlinklogo">
+                </a>
+            </div>
+            <div class="project disabled">
+                <h1 class="text">Discordlink</h1>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </body>
 </html>

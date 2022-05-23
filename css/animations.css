@@ -1,0 +1,86 @@
+@keyframes fadeUp {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -200vh;
+    }
+}
+.fadeUp {
+    animation-name: fadeUp;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeUpDouble {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -300vh;
+    }
+}
+.fadeUpDouble {
+    animation-name: fadeUpDouble;
+    animation-duration: 1000ms;
+}
+
+
+
+
+@keyframes fadeDown {
+    from {
+        margin-top: -200vh;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+.fadeDown{
+    animation-name: fadeDown;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeUp2 {
+    from {
+        margin-top: -200vh;
+    }
+
+    to {
+        margin-top: -300vh;
+    }
+}
+.fadeUp2 {
+    animation-name: fadeUp2;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeDownDouble {
+    from {
+        margin-top: -300vh;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+.fadeDownDouble {
+    animation-name: fadeDownDouble;
+    animation-duration: 1000ms;
+}
+
+@keyframes fadeDown2 {
+    from {
+        margin-top: -300vh;
+    }
+
+    to {
+        margin-top: -200vh;
+    }
+}
+.fadeDown2 {
+    animation-name: fadeDown2;
+    animation-duration: 500ms;
+}

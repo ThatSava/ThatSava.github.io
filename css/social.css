@@ -1,0 +1,121 @@
+/* Github */
+@keyframes github-hover {
+    from {color: #FFFFFF;}
+    to {color: #585858;}
+}
+@keyframes github-unhover {
+    from {color: #585858;}
+    to {color: #FFFFFF;}
+
+}
+.fa-github {
+    animation-name: github-unhover;
+    animation-duration: 500ms;
+    color: #FFFFFF;
+}
+.fa-github:hover {
+    animation-name: github-hover;
+    animation-duration: 500ms;
+    color: #585858;
+}
+/* Bitbucket */
+@keyframes bitbucket-hover {
+    from {color: #FFFFFF;}
+    to {color: #59afe1;}
+}
+@keyframes bitbucket-unhover {
+    from {color: #59afe1;}
+    to {color: #FFFFFF;}
+
+}
+.fa-bitbucket {
+    animation-name: bitbucket-unhover;
+    animation-duration: 500ms;
+    color: #FFFFFF;
+}
+.fa-bitbucket:hover {
+    animation-name: bitbucket-hover;
+    animation-duration: 500ms;
+    color: #59afe1;
+}
+/* Email */
+@keyframes envelope-hover {
+    from {color: #FFFFFF;}
+    to {color: #f7c53b;}
+}
+@keyframes envelope-unhover {
+    from {color: #f7c53b;}
+    to {color: #FFFFFF;}
+
+}
+.fa-envelope {
+    animation-name: envelope-unhover;
+    animation-duration: 500ms;
+    color: #FFFFFF;
+}
+.fa-envelope:hover {
+    animation-name: envelope-hover;
+    animation-duration: 500ms;
+    color: #f7c53b;
+}
+/* Patreon */
+@keyframes money-hover {
+    from {color: #FFFFFF;}
+    to {color: #e5461a;}
+}
+@keyframes money-unhover {
+    from {color: #e5461a;}
+    to {color: #FFFFFF;}
+
+}
+.fa-money {
+    animation-name: money-unhover;
+    animation-duration: 500ms;
+    color: #FFFFFF;
+}
+.fa-money:hover {
+    animation-name: money-hover;
+    animation-duration: 500ms;
+    color: #e5461a;
+}
+/* Discord is styled within the svg because reasons */
+/* Patreon */
+@keyframes steam-hover {
+    from {color: #FFFFFF;}
+    to {color: #231f20;}
+}
+@keyframes steam-unhover {
+    from {color: #231f20;}
+    to {color: #FFFFFF;}
+
+}
+.fa-steam {
+    animation-name: steam-unhover;
+    animation-duration: 500ms;
+    color: #FFFFFF;
+}
+.fa-steam:hover {
+    animation-name: steam-hover;
+    animation-duration: 500ms;
+    color: #231f20;
+}
+/* Twitter */
+@keyframes twitter-hover {
+    from {color: #FFFFFF;}
+    to {color: #55acee;}
+}
+@keyframes twitter-unhover {
+    from {color: #55acee;}
+    to {color: #FFFFFF;}
+
+}
+.fa-twitter {
+    animation-name: twitter-unhover;
+    animation-duration: 500ms;
+    color: #FFFFFF;
+}
+.fa-twitter:hover {
+    animation-name: twitter-hover;
+    animation-duration: 500ms;
+    color: #55acee;
+}
